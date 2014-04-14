@@ -28,7 +28,8 @@ Include jQuery and the plugin on a page. Then select a html/jquery selector and 
 <script src="jquery.santaClock.js"></script>
 $('#santaClock').santaClock();
 ```
-
+### Online Demo
+ [Check the online demo at this link](http://jsfiddle.net/MUMU1987/C7DeE/)
 ## License
 Copyright (c) 2014 Santosh Kumar Mohanty
 Licensed under the MIT license.
