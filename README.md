@@ -1,4 +1,4 @@
-webClock - Fancy Animated Easily Customizable Clock for Websitess
+webClock - Fancy Animated Easily Customizable Clock for Website(s)
 ==========
 
 A fancy , animated jQuery Plugin to be used in Websites !!!
@@ -32,4 +32,3 @@ $('#santaClock').webClock();
  [Check the online demo at this link](http://jsfiddle.net/MUMU1987/C7DeE/)
 ## License
 Copyright (c) 2014 Santosh Kumar Mohanty
-Licensed under the MIT license.
