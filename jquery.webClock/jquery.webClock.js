@@ -76,7 +76,7 @@
             var h = currentTime.getHours();
             var m = currentTime.getMinutes();
             var s = currentTime.getSeconds();
-
+            $("#date").html(currentTime.toString());
             animation(gVars.green, s, 60, "Second");
             animation(gVars.blue, m, 60, "Minute");
             animation(gVars.orange, h, 24, "Hour");
