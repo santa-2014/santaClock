@@ -1,4 +1,4 @@
-webClock - Fancy Animated Easily Customable Clock for Websitess
+webClock - Fancy Animated Easily Customizable Clock for Websitess
 ==========
 
 A fancy , animated jQuery Plugin to be used in Websites !!!
