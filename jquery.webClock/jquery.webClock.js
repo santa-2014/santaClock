@@ -1,12 +1,12 @@
 /*!
-  jquery.santaClock.js
+  jquery.webClock.js
  */
 (function($){
 
     var gVars = {}; // Global Array for rotating Clock
 
-    // extending jquery core library to add a function named santaClock():
-    $.fn.santaClock = function(opts){
+    // extending jquery core library to add a function named webClock():
+    $.fn.webClock = function(opts){
         var container = this.eq(0);
         if(!container)
         {
@@ -43,7 +43,7 @@
         {
             // Creating a new element and setting the color as a class name:
 
-            hand = $('<div>').attr('class',colors[i]+' clock').html(
+            hand = $('<div>').attr('class',colors[i]+' webclock').html(
                 '<div class="display"></div>'+
 
                     '<div class="front left"></div>'+
@@ -84,7 +84,7 @@
         },1000);
     }
 
-    function animation(clock, current, total,unit)
+    function animation(webclock, current, total,unit)
     {
         // Calculating the current angle:
         var angle = (360/total)*(current+1);
@@ -94,33 +94,33 @@
         if(current==0)
         {
             // Hiding the right half of the background:
-            clock.rotateRight.hide();
+            webclock.rotateRight.hide();
 
             // Resetting the rotation of the left part:
-            rotateElement(clock.rotateLeft,0);
+            rotateElement(webclock.rotateLeft,0);
         }
 
         if(angle<=180)
         {
             // The left part is rotated, and the right is currently hidden:
-            element = clock.rotateLeft;
+            element = webclock.rotateLeft;
         }
         else
         {
             // The first part of the rotation has completed, so we start rotating the right part:
-            clock.rotateRight.show();
-            clock.rotateLeft.show();
+            webclock.rotateRight.show();
+            webclock.rotateLeft.show();
 
-            rotateElement(clock.rotateLeft,180);
+            rotateElement(webclock.rotateLeft,180);
 
-            element = clock.rotateRight;
+            element = webclock.rotateRight;
             angle = angle-180;
         }
 
         rotateElement(element,angle);
 
         // Setting the text inside of the display element, inserting a leading zero if needed:
-        clock.display.html(current<10? '0'+current+" "+unit : current+" "+unit);
+        webclock.display.html(current<10? '0'+current+" "+unit : current+" "+unit);
     }
 
     function rotateElement(element,angle)
@@ -145,7 +145,7 @@
             element.css("left",-Math.floor((element.width()-200)/2));
             element.css("top",-Math.floor((element.height()-200)/2));
         }
-        $(".clock .display").css("color","#"+((1<<24)*Math.random()|0).toString(16));
+        $(".webclock .display").css("color","#"+((1<<24)*Math.random()|0).toString(16));
 
     }
 

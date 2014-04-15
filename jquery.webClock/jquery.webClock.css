@@ -1,4 +1,4 @@
-.clock{
+.webclock{
     background-color:#FFFFFF;
     height:100px;
     width:100px;
@@ -7,7 +7,7 @@
     float:left;
 }
 
-.clock .rotate{
+.webclock .rotate{
     /* There are two class named rotate div. one for each half of the background */
     position:absolute;
     width:100px;
@@ -22,7 +22,7 @@
 }
 
 
-.clock .bg, .clock .front{
+.webclock .bg, .webclock .front{
     width:50px;
     height:100px;
     background-color:#FFFFFF;
@@ -30,7 +30,7 @@
     top:0;
 }
 
-.clock .display {
+.webclock .display {
     color: #F5F5F5;
     font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
     font-size: 10px;
@@ -44,7 +44,7 @@
 }
 /* The left part of the background: */
 
-.clock .bg.left{ left:0; }
+.webclock .bg.left{ left:0; }
 
 /* Individual styles for each color: */
 .orange .bg.left{ background:url("images/orange.png") no-repeat left top; }
@@ -52,13 +52,13 @@
 .blue .bg.left{	background:url("images/blue.png") no-repeat left top; }
 
 /* The right part of the background: */
-.clock .bg.right{ left:50px; }
+.webclock .bg.right{ left:50px; }
 
 .orange .bg.right{ background:url("images/orange.png") no-repeat right top; }
 .green .bg.right{ background:url("images/green.png") no-repeat right top; }
 .blue .bg.right{ background:url("images/blue.png") no-repeat right top; }
 
-.clock .front.left{
+.webclock .front.left{
     left:0;
     z-index:10;
 }

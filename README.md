@@ -1,4 +1,4 @@
-SantaClock - Web Clock made Easy
+webClock - Fancy Animated Easily Customable Clock for Websitess
 ==========
 
 A fancy , animated jQuery Plugin to be used in Websites !!!
@@ -25,8 +25,8 @@ Include jQuery and the plugin on a page. Then select a html/jquery selector and 
 <div id="santaClock"></div>
 <link rel="stylesheet" type="text/css" href="jquery.santaClock/jquery.santaClock.css" />
 <script src="jquery.js"></script>
-<script src="jquery.santaClock.js"></script>
-$('#santaClock').santaClock();
+<script src="jquery.webClock.js"></script>
+$('#santaClock').webClock();
 ```
 ### Online Demo
  [Check the online demo at this link](http://jsfiddle.net/MUMU1987/C7DeE/)
